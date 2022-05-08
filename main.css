@@ -1,0 +1,64 @@
+/* 메인 폰트 import */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;500&display=swap');
+
+a {
+    text-decoration: none;
+    color: darkgray;
+}
+
+body{
+    margin: 0 auto;
+}
+
+.menu {
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(166,166,166,0.2);
+    padding: 10px 15px;
+}
+
+.menu .logo {
+    font-size: 20px;
+    margin-left: 15px;
+    font-weight: bold;
+}
+
+.menu .list {
+    list-style: none;
+    display: flex;
+    margin-right: 500px;
+}
+
+.menu .list li {
+    display: flex;
+    margin-left: 25px;
+    font-weight: bold;
+}
+
+/* 사진이 들어가는 container */
+
+#container {
+    width: 100%;
+}
+
+
+#container #information{
+
+    width: 100%;
+    height: 500px;
+
+    /* 배경사진 CSS */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(/img/bg-4.png);
+    /* background-attachment: fixed; */
+
+}
+
+
+
+
+
+
