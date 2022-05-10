@@ -8,48 +8,95 @@
     <title>Document</title>
     <!-- Main.css -->
     <link rel="stylesheet" href="main.css">
-    <!-- reset.css -->
+    <!-- reset.css  -->
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"> -->
     <!-- font -->
     <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
     <!-- fontawesome -->
     <script src="https://kit.fontawesome.com/d0606c84a8.js" crossorigin="anonymous"></script>
 
+    <!-- Font -->
+    <link href="https://webfontworld.github.io/seoulnamsan/SeoulNamsan.css" rel="stylesheet">
+
 
 </head>
 
 <body>
-    <!-- 헤더 제작 -->
-    <nav class="menu">
-        <!-- 좌측 로고 div -->
-        <div class="logo">
-            <a href="profile">KSP's Profile</a>
-        </div>
+    <section class="header">
+        <!-- 헤더 제작 -->
+        <nav class="menu">
+            <!-- 좌측 로고 div -->
+            <div class="logo">
+                <a href="profile">KSP's Profile</a>
+            </div>
 
-        <!-- 헤더 메뉴 -->
-        <div class="list">
-            <li><a href="#">Aboue me</a></li>
-            <li><a href="#">Map</a></li>
-            <li><a href="#">Favorite</a></li>
-            <li><a href="#">More</a></li>
-        </div>
+            <!-- 헤더 메뉴 -->
+            <div class="list">
+                <li><a href="#">Aboue me</a></li>
+                <li><a href="#">Map</a></li>
+                <li><a href="#">Favorite</a></li>
+                <li><a href="#">More</a></li>
+            </div>
 
-        <!-- 우측 끝 메뉴 -->
+            <!-- 우측 끝 메뉴 -->
 
-        <div class="button">
-            <i class="fa-solid fa-bars"></i>
-        </div>
-    </nav>
+            <div class="button">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+    </section>
 
     <!-- 상단 사이트 소개 -->
 
-    <div id="container">
-        <div id="information">
-            WHO IS?
-            <br>
-            김선필에 대해 소개합니다.
+    <!-- 사이트 소개 글 -->
+    <section class="start">
+        <div id="container">
+            <div id="information">
+                WHO IS?
+                <br>
+                우송대학교 1학년
+                <br>
+                김선필 입니다.
+                <br>
+
+                <p>
+                    이번 프로젝트의 주제는 자기소개 입니다.
+                    <br> 저의 발표에 시간을 투자해주셔서 감사합니다.
+                    <br> 이제부터 김선필의 TMI를 시작하겠습니다.
+                </p>
+
+                <!-- 증명사진 액자 div -->
+                <div class="img-box">
+                    <img src="/img/ksp.jpg" alt="Photo"></div>
+            </div>
         </div>
-    </div>
+    </section>
+
+    <section class="info">
+        <div class="info_me">
+            ABOUT
+            <h1>
+            왜 이 주제를 선택했는가?
+            <hr>
+        </h1>
+            <p>
+                제가 이 주제를 선택 한 이유는 아직 많이 친한 동기들도 없고, <br>
+                조금 더 친구들과 가까워지고 나는 이런사람이다를 알리는 것을 좋아하기 때문입니다.<br>
+                이 발표가 끝난 뒤 다른 친구들과 얘기할 수 있으면 좋겠습니다.
+            </p>
+        </div>
+    </section>
+
+    <!-- Icon List -->
+
+    <section class="graphic">
+        <div class="icon">
+            <i class="fa-solid fa-book fa-3x"></i>
+            <i class="fa-solid fa-paper-plane fa-3x"></i>
+            <i class="fa-solid fa-book fa-3x"></i>
+
+        </div>
+    </section>
 
 
 </body>

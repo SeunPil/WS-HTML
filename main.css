@@ -1,12 +1,18 @@
-/* 메인 폰트 import */
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;500&display=swap');
+@font-face {
+    font-family: 'Y_Spotlight';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/Y_Spotlight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 
 a {
     text-decoration: none;
     color: darkgray;
 }
 
-body{
+body {
     margin: 0 auto;
 }
 
@@ -15,8 +21,8 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: rgba(166,166,166,0.2);
-    padding: 10px 15px;
+    background: rgba(166, 166, 166, 0.2);
+    padding: 10px 50px;
 }
 
 .menu .logo {
@@ -28,7 +34,7 @@ body{
 .menu .list {
     list-style: none;
     display: flex;
-    margin-right: 500px;
+    margin-right: 650px;
 }
 
 .menu .list li {
@@ -43,22 +49,88 @@ body{
     width: 100%;
 }
 
+.start {
+    width: 100%;
+    height: 800px;
+}
 
-#container #information{
 
+.start #container #information {
+    position: absolute;
+    width: 100%;
+    height: 750px;
+    background-image: url(/img/bg-main.png);
+    background-repeat: no-repeat;
+    z-index: 1;
+    padding-top: 150px;
+    padding-left: 400px;
+    
+}
+
+/* 소개글 CSS */
+#container #information {
+    font-family: "Y_Spotlight";
+    font-weight: bold;
+    font-size: 45px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#container #information p {
+    font-family: "SeoulNamsan";
+    font-size: 30px;
+}
+
+#container #information .img-box {
+    position: absolute;
+    left: 1100px;
+    top: 120px;
+    background: white;
+    width: 270px;
+    height: 345px;
+    padding-left: 30px;
+    padding-top: 27px;
+
+    box-shadow: 10px 10px 15px gray;
+}
+
+/* Information */
+
+.info {
+    margin-top: 130px;
     width: 100%;
     height: 500px;
-
-    /* 배경사진 CSS */
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-image: url(/img/bg-4.png);
-    /* background-attachment: fixed; */
-
+    text-align: left;
+    font-family: "Y_Spotlight";
+    font-weight: bold;
+    font-size: 30px;   
+    /* background: yellow; */
 }
 
 
 
+.info_me {
+    position: absolute;
+    text-align: center;
+    left: 450px;
+}
 
+.info h1 {
+    line-height: 30px;
+    text-align: left;
+    color: rgba(92,209,229);
+}
 
+.info p {
+    text-align: left;
+    font-weight: normal;
+    font-size: 30px;
+    color: gray;
+}
 
+/* Icon List */
+
+.graphic {
+    display: flex;
+    justify-content: space-around;
+}
