@@ -1,6 +1,7 @@
-html,body {
-    width:100%;
-    height:100%;
+html,
+body {
+    width: 100%;
+    height: 100%;
 }
 
 html {
@@ -8,22 +9,22 @@ html {
 }
 
 .item {
-    width:100%;
-    height:100%;
-    
-    scroll-snap-align:center;
+    width: 100%;
+    height: 100%;
+
+    scroll-snap-align: center;
     scroll-snap-stop: always;
 }
 
-.item:nth-child(1){
+.item:nth-child(1) {
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
 }
 
 .information {
-    background: yellow;
+    /* background: yellow; */
     width: 100%;
     height: 800px;
     display: flex;
@@ -32,10 +33,93 @@ html {
 
 }
 
-.info_content{
+
+.info_tag {
+
+    width: 220px;
+    height: 45px;
+    background: #dcf0fb;
+    border-radius: 5px;
+    border: 3px solid rgb(64, 172, 172);
+
+    color: #0288d1;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+    align-items: center;
+
+    position: absolute;
+    float: left;
+    left: 208px;
+    top: 115px;
+}
+
+
+
+/* typing Animation */
+@keyframes typing {
+
+    /* 시작할 때 w는 0으로 시작 */
+    from {
+        width: 0
+    }
+}
+
+@keyframes cursor {
+    50% {
+        border-color: transparent
+    }
+}
+
+.info_content {
     width: 1500px;
     height: 600px;
-    background: green;
+    /* background: green; */
+    border: 3px solid rgb(64, 172, 172);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 20px;
+    color: gray;
+    overflow: hidden;
+    /* border-right: 1px solid; */
+
+}
+
+.info_content .info_ani {
+    color: black;
+    width: 37ch;
+    white-space: nowrap;
+    display: block;
+    overflow: hidden;
+    margin-bottom: 2px;
+    /* 3초동안 37개의 글자를 표시한다. */
+    animation: typing 4s steps(37) infinite;
+}
+
+
+
+.info_me {
+    display: flex;
+    /* background: blue; */
+    width: 900px;
+    height: 500px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* 사진박스 */
+
+.information .info_content .img_box {
+    display: flex;
+    width: 300px;
+    height: 350px;
+    background: white;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgb(64, 172, 172);
+    box-shadow: 4px 4px 1px;
 }
 
 
@@ -43,9 +127,10 @@ html {
 
 
 
-.item:nth-child(2){
-    background:blue;
+.item:nth-child(2) {
+    background: blue;
 }
-.item:nth-child(3){
-    background:yellow;
+
+.item:nth-child(3) {
+    background: yellow;
 }

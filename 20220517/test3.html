@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        var pnum, num = 0;
+
+        for (pnum = 2; pnum <= 100; pnum = pnum + 1) {
+
+            for (i = 2; i <= pnum - 1; i = i + 1) {
+                if (pnum % i == 0) {
+                    num = 1;
+                }
+            }
+            if (num == 0) {
+                document.write("수 " + pnum + " 는 소수입니다.<br>")
+            }
+
+            num = 0;
+        }
+    </script>
+
+</body>
+
+</html>
