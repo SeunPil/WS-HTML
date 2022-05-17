@@ -1,3 +1,12 @@
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: gray;
+}
+
 html,
 body {
     width: 100%;
@@ -14,13 +23,10 @@ html {
 
     scroll-snap-align: center;
     scroll-snap-stop: always;
-}
 
-.item:nth-child(1) {
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
 .information {
@@ -33,7 +39,7 @@ html {
 
 }
 
-
+/* 상단 박스 위 태그 <Information /> */
 .info_tag {
 
     width: 220px;
@@ -51,7 +57,28 @@ html {
     position: absolute;
     float: left;
     left: 208px;
-    top: 115px;
+    top: 100px;
+}
+
+/* Contect */
+.info_tag2 {
+
+    width: 140px;
+    height: 30px;
+    background: #dcf0fb;
+    border-radius: 5px;
+    border: 3px solid rgb(64, 172, 172);
+
+    color: #0288d1;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    align-items: center;
+
+    position: absolute;
+    float: left;
+    left: 920px;
+    top: 500px;
 }
 
 
@@ -74,7 +101,6 @@ html {
 .info_content {
     width: 1500px;
     height: 600px;
-    /* background: green; */
     border: 3px solid rgb(64, 172, 172);
     display: flex;
     align-items: center;
@@ -83,9 +109,23 @@ html {
     font-size: 20px;
     color: gray;
     overflow: hidden;
-    /* border-right: 1px solid; */
 
 }
+
+.info_content2 {
+    width: 1500px;
+    height: 600px;
+    border: 3px solid rgb(64, 172, 172);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 20px;
+    color: gray;
+    overflow: hidden;
+
+}
+
 
 .info_content .info_ani {
     color: black;
@@ -95,18 +135,18 @@ html {
     overflow: hidden;
     margin-bottom: 2px;
     /* 3초동안 37개의 글자를 표시한다. */
-    animation: typing 4s steps(37) infinite;
+    animation: typing 6s steps(37) infinite;
 }
 
 
 
 .info_me {
     display: flex;
-    /* background: blue; */
     width: 900px;
     height: 500px;
     align-items: center;
     justify-content: space-between;
+    ;
 }
 
 /* 사진박스 */
@@ -122,14 +162,28 @@ html {
     box-shadow: 4px 4px 1px;
 }
 
+.icon {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 200px;
+    width: 500px;
+
+}
+
+.icon i:hover {
+    transform: scale(1.2);
+    color: black;
+}
 
 
-
+/* Section 2  */
 
 
 .item:nth-child(2) {
-    background: blue;
+    background-color: #dcf0fb;
 }
+
 
 .item:nth-child(3) {
     background: yellow;
